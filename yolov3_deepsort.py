@@ -39,6 +39,7 @@ class VideoTracker(object):
         self.detector = build_detector(args.detection_model, cfg, use_cuda=use_cuda)
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
         self.class_names = self.detector.class_names
+        self.temp_tesult = []
 
     def __enter__(self):
         if self.args.cam != -1:
@@ -74,6 +75,16 @@ class VideoTracker(object):
         if exc_type:
             print(exc_type, exc_value, exc_traceback)
 
+    def get_next_detection(self, image, sample_rate, idx_frame):
+
+        # Uniformly sample frames to save resources
+        # Copy the previous result when a frame is skipped
+        skip_frame =int(1 / sample_rate)
+        print(skip_frame)
+
+        bbox_xywh, cls_conf, cls_ids = self.detector(image)
+        return bbox_xywh, cls_conf, cls_ids
+
     def run(self):
         results = []
         fps = []
@@ -88,7 +99,7 @@ class VideoTracker(object):
             im = cv2.cvtColor(ori_im, cv2.COLOR_BGR2RGB)
 
             # do detection
-            bbox_xywh, cls_conf, cls_ids = self.detector(im)
+            bbox_xywh, cls_conf, cls_ids = self.get_next_detection(im, args.sample_rate, idx_frame)
 
             # select person class
             mask = cls_ids == 0
@@ -135,6 +146,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("VIDEO_PATH", type=str)
     parser.add_argument("--detection_model", type=str, default="yolov3")
+    parser.add_argument("--sample_rate", type=float, default=1.0)
     parser.add_argument("--config_detection", type=str, default="./configs/yolov3.yaml")
     parser.add_argument("--config_deepsort", type=str, default="./configs/deep_sort.yaml")
     # parser.add_argument("--ignore_display", dest="display", action="store_false", default=True)
@@ -143,6 +155,7 @@ def parse_args():
     parser.add_argument("--display_width", type=int, default=800)
     parser.add_argument("--display_height", type=int, default=600)
     parser.add_argument("--save_path", type=str, default="./output/")
+    parser.add_argument("--save_detection", type=bool, default=False)
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
     parser.add_argument("--camera", action="store", dest="cam", type=int, default="-1")
     return parser.parse_args()
