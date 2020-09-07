@@ -35,6 +35,11 @@ class VideoTracker(object):
         else:
             self.vdo = cv2.VideoCapture()
 
+        # Uniformly sample frames to save resources
+        # Copy the previous result when a frame is skipped
+        self.logger.info(f"Sample rate is {args.sample_rate}")
+        self.skip_frame = int(1 / args.sample_rate)
+
         self.logger.info(f"Detection model is set to {args.detection_model}")
         self.detector = build_detector(args.detection_model, cfg, use_cuda=use_cuda)
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
@@ -59,15 +64,16 @@ class VideoTracker(object):
             os.makedirs(self.args.save_path, exist_ok=True)
 
             # path of saved video and results
-            self.save_video_path = os.path.join(self.args.save_path, "results.avi")
-            self.save_results_path = os.path.join(self.args.save_path, "results.txt")
+            self.save_video_path = os.path.join(self.args.save_path, self.args.save_file + ".avi")
+            self.save_results_path = os.path.join(self.args.save_path, self.args.save_file +  ".txt")
 
             # create video writer
             fourcc = cv2.VideoWriter_fourcc(*'MJPG')
             self.writer = cv2.VideoWriter(self.save_video_path, fourcc, 20, (self.im_width, self.im_height))
 
             # logging
-            self.logger.info("Save results to {}".format(self.args.save_path))
+            self.logger.info(f"Saving video  to {self.save_video_path}")
+            self.logger.info(f"Saving result to {self.save_results_path}")
 
         return self
 
@@ -75,31 +81,30 @@ class VideoTracker(object):
         if exc_type:
             print(exc_type, exc_value, exc_traceback)
 
-    def get_next_detection(self, image, sample_rate, idx_frame):
-
-        # Uniformly sample frames to save resources
-        # Copy the previous result when a frame is skipped
-        skip_frame =int(1 / sample_rate)
-        print(skip_frame)
-
-        bbox_xywh, cls_conf, cls_ids = self.detector(image)
-        return bbox_xywh, cls_conf, cls_ids
+    def get_next_detection(self, image, idx_frame):
+        # Sample frames to save resources
+        # self.logger.info(f"skip frame is {self.skip_frame}")
+        if idx_frame % self.skip_frame == 0:
+            self.logger.info(f"Running detection for frame {idx_frame}")
+            self.temp_tesult = self.detector(image)
+        return self.temp_tesult
 
     def run(self):
         results = []
         fps = []
         idx_frame = 0
         while self.vdo.grab():
-            idx_frame += 1
-            if idx_frame % self.args.frame_interval:
-                continue
+
+            # if idx_frame % self.args.frame_interval:
+            #     continue
 
             start = time.time()
             _, ori_im = self.vdo.retrieve()
             im = cv2.cvtColor(ori_im, cv2.COLOR_BGR2RGB)
 
             # do detection
-            bbox_xywh, cls_conf, cls_ids = self.get_next_detection(im, args.sample_rate, idx_frame)
+            bbox_xywh, cls_conf, cls_ids = self.get_next_detection(im, idx_frame)
+            idx_frame += 1
 
             # select person class
             mask = cls_ids == 0
@@ -151,10 +156,11 @@ def parse_args():
     parser.add_argument("--config_deepsort", type=str, default="./configs/deep_sort.yaml")
     # parser.add_argument("--ignore_display", dest="display", action="store_false", default=True)
     parser.add_argument("--display", action="store_true")
-    parser.add_argument("--frame_interval", type=int, default=1)
+    # parser.add_argument("--frame_interval", type=int, default=1)
     parser.add_argument("--display_width", type=int, default=800)
     parser.add_argument("--display_height", type=int, default=600)
     parser.add_argument("--save_path", type=str, default="./output/")
+    parser.add_argument("--save_file", type=str, default="results")
     parser.add_argument("--save_detection", type=bool, default=False)
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
     parser.add_argument("--camera", action="store", dest="cam", type=int, default="-1")
