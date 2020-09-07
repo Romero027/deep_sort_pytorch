@@ -25,6 +25,13 @@ sh build.sh
 cd ../../..
 ```
 
+2. Download Videos
+```bash
+cd data
+sh download_MOT16.sh
+cd ..
+```
+
 Notice:
 If compiling failed, the simplist way is to **Upgrade your pytorch >= 1.1 and torchvision >= 0.3" and you can avoid the troublesome compiling problems which are most likely caused by either `gcc version too low` or `libraries missing`.
 
@@ -35,27 +42,33 @@ usage: python yolov3_deepsort.py VIDEO_PATH
                                 [--frame_interval FRAME_INTERVAL]
                                 [--config_detection CONFIG_DETECTION]
                                 [--config_deepsort CONFIG_DEEPSORT]
+                                [--detection_model DETECTION MODEL]
                                 [--display]
                                 [--display_width DISPLAY_WIDTH]
                                 [--display_height DISPLAY_HEIGHT]
-                                [--save_path SAVE_PATH]          
+                                [--sample_rate SAMPLE_RATE]
+                                [--save_path SAVE_PATH]         
+                                [--save_file SAVE_FILE]
                                 [--cpu]          
 
 # yolov3 + deepsort
-python yolov3_deepsort.py [VIDEO_PATH]
+python yolov3_deepsort.py [VIDEO_NAME] --save_file [VIDEO_NAME]
+Example:  python yolov3_deepsort.py data/MOT16-02.avi --save_file MOT16-02
 
 # yolov3_tiny + deepsort
-python yolov3_deepsort.py [VIDEO_PATH] --config_detection ./configs/yolov3_tiny.yaml
+python yolov3_deepsort.py [VIDEO_PATH] --config_detection ./configs/yolov3_tiny.yaml --detection_model yolov3-tiny --save_file [VIDEO_NAME]
 
-# yolov3 + deepsort on webcam
-python3 yolov3_deepsort.py /dev/video0 --camera 0
-
-# yolov3_tiny + deepsort on webcam
-python3 yolov3_deepsort.py /dev/video0 --config_detection ./configs/yolov3_tiny.yaml --camera 0
 ```
 Use `--display` to enable display.  
 Results will be saved to `./output/results.avi` and `./output/results.txt`.
 
+6. [Optional] Evaluate results
+
+```
+python -m motmetrics.apps.evaluateTracking --help
+
+Example: python -m motmetrics.apps.evaluateTracking MOT16Labels/train output/ seq
+```
 
 ## References
 - paper: [Simple Online and Realtime Tracking with a Deep Association Metric](https://arxiv.org/abs/1703.07402)
