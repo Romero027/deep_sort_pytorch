@@ -2,6 +2,7 @@ DEEPSORT:
   REID_CKPT: "./deep_sort/deep/checkpoint/ckpt.t7"
   # The matching threshold. Samples with larger distance are considered an invalid match.
   MAX_DIST: 0.2
+  # Min confidence of yolo
   MIN_CONFIDENCE: 0.3
   NMS_MAX_OVERLAP: 0.5
   # Gating threshold. Associations with cost larger than this value are disregarded.
