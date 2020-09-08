@@ -4,6 +4,7 @@ import time
 import argparse
 import torch
 import warnings
+import pickle
 import numpy as np
 
 from detector import build_detector
@@ -93,6 +94,7 @@ class VideoTracker(object):
         results = []
         fps = []
         idx_frame = 0
+        detection_dict = {}
         while self.vdo.grab():
 
             # if idx_frame % self.args.frame_interval:
@@ -104,6 +106,9 @@ class VideoTracker(object):
 
             # do detection
             bbox_xywh, cls_conf, cls_ids = self.get_next_detection(im, idx_frame)
+
+            if args.save_detection:
+                detection_dict[idx_frame] = [bbox_xywh, cls_conf, cls_ids]
             idx_frame += 1
 
             # select person class
@@ -146,6 +151,12 @@ class VideoTracker(object):
             self.logger.info("time: {:.03f}s, fps: {:.03f}, detection numbers: {}, tracking numbers: {}" \
                              .format(end - start, 1 / (end - start), bbox_xywh.shape[0], len(outputs)))
         self.logger.info("Average fps is {:.03f}".format(sum(fps) / len(fps)))
+        if args.save_detection:
+            with open(os.path.join("output", args.detection_model, ".txt"), "rb") as f:
+                pickle.dump(detection_dict, f)
+
+
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -159,7 +170,7 @@ def parse_args():
     # parser.add_argument("--frame_interval", type=int, default=1)
     parser.add_argument("--display_width", type=int, default=800)
     parser.add_argument("--display_height", type=int, default=600)
-    parser.add_argument("--save_path", type=str, default="./output/")
+    parser.add_argument("--save_path", git type=str, default="./output/")
     parser.add_argument("--save_file", type=str, default="results")
     parser.add_argument("--save_detection", type=bool, default=False)
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
