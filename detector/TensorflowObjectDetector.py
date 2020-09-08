@@ -1,8 +1,8 @@
-
 import cv2
 import numpy as np
 
-model_dir = '/tank/kuntai/code/deep_sort_pytorch/models/'
+#model_dir = '/tank/kuntai/code/deep_sort_pytorch/models/'
+model_dir = '/home/ubuntu/deep_sort_pytorch/models/'
 class_names = {0: u'__background__',
  1: u'person',
  2: u'bicycle',
