@@ -77,31 +77,31 @@ def multi_bbox_ious(boxes1, boxes2, x1y1x2y2=True):
     uarea = area1 + area2 - carea
     return carea / uarea
 
-
-from .nms import boxes_nms
-
-
-def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thresh=0.3):
-    batch_size = boxes.size(0)
-
-    # nms
-    results_boxes = []
-    for batch_id in range(batch_size):
-        processed_boxes = []
-        for cls_id in range(num_classes):
-            mask = (boxes[batch_id, :, -1] == cls_id) * (boxes[batch_id, :, 4] > obj_thresh)
-            masked_boxes = boxes[batch_id, mask]
-
-            keep = boxes_nms(masked_boxes[:, :4], masked_boxes[:, 5], nms_thresh)
-
-            nmsed_boxes = masked_boxes[keep, :]
-
-            processed_boxes.append(nmsed_boxes)
-        processed_boxes = torch.cat(processed_boxes, dim=0)
-
-    results_boxes.append(processed_boxes)
-
-    return results_boxes
+#
+# from .nms import boxes_nms
+#
+#
+# def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thresh=0.3):
+#     batch_size = boxes.size(0)
+#
+#     # nms
+#     results_boxes = []
+#     for batch_id in range(batch_size):
+#         processed_boxes = []
+#         for cls_id in range(num_classes):
+#             mask = (boxes[batch_id, :, -1] == cls_id) * (boxes[batch_id, :, 4] > obj_thresh)
+#             masked_boxes = boxes[batch_id, mask]
+#
+#             keep = boxes_nms(masked_boxes[:, :4], masked_boxes[:, 5], nms_thresh)
+#
+#             nmsed_boxes = masked_boxes[keep, :]
+#
+#             processed_boxes.append(nmsed_boxes)
+#         processed_boxes = torch.cat(processed_boxes, dim=0)
+#
+#     results_boxes.append(processed_boxes)
+#
+#     return results_boxes
 
 
 def xywh_to_xyxy(boxes_xywh):
@@ -127,36 +127,36 @@ def xyxy_to_xywh(boxes_xyxy):
 
     return boxes_xywh
 
-
-def nms(boxes, nms_thresh):
-    if len(boxes) == 0:
-        return boxes
-
-    det_confs = torch.zeros(len(boxes))
-    for i in range(len(boxes)):
-        det_confs[i] = boxes[i][4]
-
-    _, sortIds = torch.sort(det_confs, descending=True)
-    out_boxes = []
-    for i in range(len(boxes)):
-        box_i = boxes[sortIds[i]]
-        if box_i[4] > 0:
-            out_boxes.append(box_i)
-            for j in range(i + 1, len(boxes)):
-                box_j = boxes[sortIds[j]]
-                if bbox_iou(box_i, box_j, x1y1x2y2=False) > nms_thresh:
-                    # print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
-                    box_j[4] = 0
-    return out_boxes
-
-
-def convert2cpu(gpu_matrix):
-    return torch.FloatTensor(gpu_matrix.size()).copy_(gpu_matrix)
-
-
-def convert2cpu_long(gpu_matrix):
-    return torch.LongTensor(gpu_matrix.size()).copy_(gpu_matrix)
-
+#
+# def nms(boxes, nms_thresh):
+#     if len(boxes) == 0:
+#         return boxes
+#
+#     det_confs = torch.zeros(len(boxes))
+#     for i in range(len(boxes)):
+#         det_confs[i] = boxes[i][4]
+#
+#     _, sortIds = torch.sort(det_confs, descending=True)
+#     out_boxes = []
+#     for i in range(len(boxes)):
+#         box_i = boxes[sortIds[i]]
+#         if box_i[4] > 0:
+#             out_boxes.append(box_i)
+#             for j in range(i + 1, len(boxes)):
+#                 box_j = boxes[sortIds[j]]
+#                 if bbox_iou(box_i, box_j, x1y1x2y2=False) > nms_thresh:
+#                     # print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
+#                     box_j[4] = 0
+#     return out_boxes
+#
+#
+# def convert2cpu(gpu_matrix):
+#     return torch.FloatTensor(gpu_matrix.size()).copy_(gpu_matrix)
+#
+#
+# def convert2cpu_long(gpu_matrix):
+#     return torch.LongTensor(gpu_matrix.size()).copy_(gpu_matrix)
+#
 
 def get_all_boxes(output, conf_thresh, num_classes, only_objectness=1, validation=False, use_cuda=True):
     # total number of inputs (batch size)

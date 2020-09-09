@@ -170,7 +170,7 @@ def parse_args():
     # parser.add_argument("--frame_interval", type=int, default=1)
     parser.add_argument("--display_width", type=int, default=800)
     parser.add_argument("--display_height", type=int, default=600)
-    parser.add_argument("--save_path", git type=str, default="./output/")
+    parser.add_argument("--save_path", type=str, default="./output/")
     parser.add_argument("--save_file", type=str, default="results")
     parser.add_argument("--save_detection", type=bool, default=False)
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)

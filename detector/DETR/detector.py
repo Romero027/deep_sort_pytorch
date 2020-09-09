@@ -3,7 +3,7 @@ import logging
 import numpy as np
 import cv2
 
-from .yolo_utils import get_all_boxes, nms, post_process, xywh_to_xyxy, xyxy_to_xywh
+from .yolo_utils import get_all_boxes, xywh_to_xyxy, xyxy_to_xywh
 
 
 
