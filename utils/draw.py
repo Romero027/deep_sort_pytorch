@@ -12,7 +12,9 @@ def compute_color_for_labels(label):
     return tuple(color)
 
 
-def draw_boxes(img, bbox, identities=None, offset=(0,0)):
+def draw_boxes(img, bbox, identities=None, offset=(0,0), force_resolution=False):
+    if force_resolution:
+        img = cv2.resize(img, (1920, 1080), fx=0, fy=0, interpolation = cv2.INTER_LINEAR)
     for i,box in enumerate(bbox):
         x1,y1,x2,y2 = [int(i) for i in box]
         x1 += offset[0]

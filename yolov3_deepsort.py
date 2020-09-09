@@ -127,7 +127,7 @@ class VideoTracker(object):
                 bbox_tlwh = []
                 bbox_xyxy = outputs[:, :4]
                 identities = outputs[:, -1]
-                ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
+                ori_im = draw_boxes(ori_im, bbox_xyxy, identities, args.force_resolution)
 
                 for bb_xyxy in bbox_xyxy:
                     bbox_tlwh.append(self.deepsort._xyxy_to_tlwh(bb_xyxy))
@@ -173,6 +173,7 @@ def parse_args():
     parser.add_argument("--save_path", type=str, default="./output/")
     parser.add_argument("--save_file", type=str, default="results")
     parser.add_argument("--save_detection", type=bool, default=False)
+    parser.add_argument("--force_resolution", type=bool, default=False)
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
     parser.add_argument("--camera", action="store", dest="cam", type=int, default="-1")
     return parser.parse_args()
