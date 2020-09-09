@@ -33,6 +33,7 @@ while True:
     ret, frame = cap.read()
     if idx % 500 == 0:
         print(f"Processed {idx} frames")
+    idx += 1
     if ret == True:
         b = cv2.resize(frame, TARGET_SCALE, fx=0, fy=0, interpolation = cv2.INTER_LINEAR)
         b = cv2.resize(b, INPUT_SCALE, fx=0, fy=0, interpolation = cv2.INTER_LINEAR)
