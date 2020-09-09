@@ -45,7 +45,7 @@ class DETR(object):
             outputs = self.net(img)
             probas = outputs['pred_logits'].softmax(-1)[0, :, :-1]
             keep = probas.max(-1).values > 0.7
-            boxes = self.rescale_bboxes(outputs['pred_boxes'][0, keep])
+            boxes = outputs['pred_boxes'][0, keep]
             
             # boxes = get_all_boxes(out_boxes, self.conf_thresh, self.num_classes,
             #                      use_cuda=self.use_cuda)  # batch size is 1
