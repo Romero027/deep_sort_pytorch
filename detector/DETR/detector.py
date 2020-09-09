@@ -66,8 +66,9 @@ class DETR(object):
                 bbox = xyxy_to_xywh(bbox)
 
             bbox *= torch.FloatTensor([[width, height, width, height]])
-            cls_conf = boxes[:, 5]
-            cls_ids = boxes[:, 6].long()
+            cls_conf = probas[keep]
+            cls_ids = torch.argmax(probas, dim=1, keepdim=True)
+
         return bbox.numpy(), cls_conf.numpy(), cls_ids.numpy()
 
     def load_class_names(self, namesfile):
