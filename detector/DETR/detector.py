@@ -17,33 +17,42 @@ class DETR(object):
         self.net.to(self.device)
 
         # constants
-        self.size = self.net.width, self.net.height
         self.score_thresh = score_thresh
         self.conf_thresh = conf_thresh
         self.nms_thresh = nms_thresh
         self.use_cuda = use_cuda
         self.is_xywh = is_xywh
-        self.num_classes = self.net.num_classes
-        # self.class_names = self.load_class_names(namesfile)
+        self.num_classes = 80
+        self.class_names = self.load_class_names("detector/DETR/coco.names")
+    
+    def rescale_bboxes(self, out_bbox, size):
+        img_w, img_h = size
+        b = box_cxcywh_to_xyxy(out_bbox)
+        b = b * torch.tensor([img_w, img_h, img_w, img_h], dtype=torch.float32)
+        return b
 
     def __call__(self, ori_img):
         # img to tensor
         assert isinstance(ori_img, np.ndarray), "input must be a numpy array!"
         img = ori_img.astype(np.float) / 255.
 
-        img = cv2.resize(img, self.size)
+        img = cv2.resize(img, (416, 416))
         img = torch.from_numpy(img).float().permute(2, 0, 1).unsqueeze(0)
 
         # forward
         with torch.no_grad():
             img = img.to(self.device)
-            out_boxes = self.net(img)
-            boxes = get_all_boxes(out_boxes, self.conf_thresh, self.num_classes,
-                                  use_cuda=self.use_cuda)  # batch size is 1
+            outputs = self.net(img)
+            probas = outputs['pred_logits'].softmax(-1)[0, :, :-1]
+            keep = probas.max(-1).values > 0.7
+            boxes = self.rescale_bboxes(outputs['pred_boxes'][0, keep])
+            
+            # boxes = get_all_boxes(out_boxes, self.conf_thresh, self.num_classes,
+            #                      use_cuda=self.use_cuda)  # batch size is 1
             # boxes = nms(boxes, self.nms_thresh)
 
-            boxes = post_process(boxes, self.net.num_classes, self.conf_thresh, self.nms_thresh)[0].cpu()
-            boxes = boxes[boxes[:, -2] > self.score_thresh, :]  # bbox xmin ymin xmax ymax
+            #boxes = post_process(boxes, self.net.num_classes, self.conf_thresh, self.nms_thresh)[0].cpu()
+            #boxes = boxes[boxes[:, -2] > self.score_thresh, :]  # bbox xmin ymin xmax ymax
 
         if len(boxes) == 0:
             bbox = torch.FloatTensor([]).reshape([0, 4])
