@@ -1,0 +1,825 @@
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:28:11 [INFO]: Video rate is data/1080p.avi
+2020-09-10 02:28:11 [INFO]: Sample rate is 1.0
+2020-09-10 02:28:11 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 02:28:16 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:28:16 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:28:16 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:29:48 [INFO]: Average fps is 8.186
+2020-09-10 02:29:48 [INFO]: Saving detection results to detr_10_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:29:49 [INFO]: Video rate is data/1080p.avi
+2020-09-10 02:29:49 [INFO]: Sample rate is 1.0
+2020-09-10 02:29:49 [INFO]: Detection model is set to yolov3
+2020-09-10 02:29:50 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 02:29:52 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:29:52 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:29:52 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:32:32 [INFO]: Average fps is 5.262
+2020-09-10 02:32:32 [INFO]: Saving detection results to yolov3_10_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:32:33 [INFO]: Video rate is data/1080p.avi
+2020-09-10 02:32:33 [INFO]: Sample rate is 1.0
+2020-09-10 02:32:33 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 02:32:33 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 02:32:35 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:32:35 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:32:35 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:34:04 [INFO]: Average fps is 9.682
+2020-09-10 02:34:04 [INFO]: Saving detection results to yolov3-tiny_10_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:34:06 [INFO]: Video rate is data/720p.avi
+2020-09-10 02:34:06 [INFO]: Sample rate is 1.0
+2020-09-10 02:34:06 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 02:34:09 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:34:09 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:34:09 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:35:39 [INFO]: Average fps is 8.052
+2020-09-10 02:35:39 [INFO]: Saving detection results to detr_10_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:35:41 [INFO]: Video rate is data/720p.avi
+2020-09-10 02:35:41 [INFO]: Sample rate is 1.0
+2020-09-10 02:35:41 [INFO]: Detection model is set to yolov3
+2020-09-10 02:35:42 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 02:35:44 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:35:44 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:35:44 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:38:24 [INFO]: Average fps is 5.285
+2020-09-10 02:38:24 [INFO]: Saving detection results to yolov3_10_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:38:26 [INFO]: Video rate is data/720p.avi
+2020-09-10 02:38:26 [INFO]: Sample rate is 1.0
+2020-09-10 02:38:26 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 02:38:26 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 02:38:28 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:38:28 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:38:28 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:39:57 [INFO]: Average fps is 9.693
+2020-09-10 02:39:57 [INFO]: Saving detection results to yolov3-tiny_10_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:39:59 [INFO]: Video rate is data/480p.avi
+2020-09-10 02:39:59 [INFO]: Sample rate is 1.0
+2020-09-10 02:39:59 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 02:40:02 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:40:02 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:40:02 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:41:32 [INFO]: Average fps is 8.056
+2020-09-10 02:41:32 [INFO]: Saving detection results to detr_10_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:41:34 [INFO]: Video rate is data/480p.avi
+2020-09-10 02:41:34 [INFO]: Sample rate is 1.0
+2020-09-10 02:41:34 [INFO]: Detection model is set to yolov3
+2020-09-10 02:41:35 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 02:41:37 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:41:37 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:41:37 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:44:18 [INFO]: Average fps is 5.247
+2020-09-10 02:44:18 [INFO]: Saving detection results to yolov3_10_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:44:19 [INFO]: Video rate is data/480p.avi
+2020-09-10 02:44:19 [INFO]: Sample rate is 1.0
+2020-09-10 02:44:19 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 02:44:19 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 02:44:21 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:44:21 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:44:21 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:45:50 [INFO]: Average fps is 9.848
+2020-09-10 02:45:50 [INFO]: Saving detection results to yolov3-tiny_10_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:45:51 [INFO]: Video rate is data/360p.avi
+2020-09-10 02:45:51 [INFO]: Sample rate is 1.0
+2020-09-10 02:45:51 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 02:45:54 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:45:54 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:45:54 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:47:25 [INFO]: Average fps is 8.019
+2020-09-10 02:47:25 [INFO]: Saving detection results to detr_10_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:47:27 [INFO]: Video rate is data/360p.avi
+2020-09-10 02:47:27 [INFO]: Sample rate is 1.0
+2020-09-10 02:47:27 [INFO]: Detection model is set to yolov3
+2020-09-10 02:47:27 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 02:47:30 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:47:30 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:47:30 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:50:12 [INFO]: Average fps is 5.215
+2020-09-10 02:50:12 [INFO]: Saving detection results to yolov3_10_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:50:13 [INFO]: Video rate is data/360p.avi
+2020-09-10 02:50:13 [INFO]: Sample rate is 1.0
+2020-09-10 02:50:13 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 02:50:13 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 02:50:16 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:50:16 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:50:16 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:51:44 [INFO]: Average fps is 9.813
+2020-09-10 02:51:44 [INFO]: Saving detection results to yolov3-tiny_10_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:51:45 [INFO]: Video rate is data/240p.avi
+2020-09-10 02:51:45 [INFO]: Sample rate is 1.0
+2020-09-10 02:51:45 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 02:51:48 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:51:48 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:51:48 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:53:18 [INFO]: Average fps is 8.049
+2020-09-10 02:53:18 [INFO]: Saving detection results to detr_10_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:53:19 [INFO]: Video rate is data/240p.avi
+2020-09-10 02:53:19 [INFO]: Sample rate is 1.0
+2020-09-10 02:53:19 [INFO]: Detection model is set to yolov3
+2020-09-10 02:53:20 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 02:53:22 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:53:22 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:53:22 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:56:00 [INFO]: Average fps is 5.269
+2020-09-10 02:56:00 [INFO]: Saving detection results to yolov3_10_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:56:01 [INFO]: Video rate is data/240p.avi
+2020-09-10 02:56:01 [INFO]: Sample rate is 1.0
+2020-09-10 02:56:01 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 02:56:01 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 02:56:03 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:56:03 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:56:03 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:57:29 [INFO]: Average fps is 9.802
+2020-09-10 02:57:29 [INFO]: Saving detection results to yolov3-tiny_10_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:57:30 [INFO]: Video rate is data/1080p.avi
+2020-09-10 02:57:30 [INFO]: Sample rate is 0.66
+2020-09-10 02:57:30 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 02:57:33 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:57:33 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:57:33 [INFO]: Saving result to ./output/results.txt
+2020-09-10 02:59:03 [INFO]: Average fps is 8.030
+2020-09-10 02:59:03 [INFO]: Saving detection results to detr_066_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 02:59:05 [INFO]: Video rate is data/1080p.avi
+2020-09-10 02:59:05 [INFO]: Sample rate is 0.66
+2020-09-10 02:59:05 [INFO]: Detection model is set to yolov3
+2020-09-10 02:59:05 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 02:59:07 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 02:59:08 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 02:59:08 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:01:51 [INFO]: Average fps is 5.143
+2020-09-10 03:01:51 [INFO]: Saving detection results to yolov3_066_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:01:52 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:01:52 [INFO]: Sample rate is 0.66
+2020-09-10 03:01:52 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:01:53 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:01:55 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:01:55 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:01:55 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:03:22 [INFO]: Average fps is 9.887
+2020-09-10 03:03:22 [INFO]: Saving detection results to yolov3-tiny_066_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:03:23 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:03:23 [INFO]: Sample rate is 0.66
+2020-09-10 03:03:23 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:03:26 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:03:26 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:03:26 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:04:56 [INFO]: Average fps is 8.114
+2020-09-10 03:04:56 [INFO]: Saving detection results to detr_066_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:04:58 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:04:58 [INFO]: Sample rate is 0.66
+2020-09-10 03:04:58 [INFO]: Detection model is set to yolov3
+2020-09-10 03:04:58 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:05:00 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:05:00 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:05:00 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:07:42 [INFO]: Average fps is 5.218
+2020-09-10 03:07:42 [INFO]: Saving detection results to yolov3_066_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:07:44 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:07:44 [INFO]: Sample rate is 0.66
+2020-09-10 03:07:44 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:07:44 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:07:46 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:07:46 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:07:46 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:09:13 [INFO]: Average fps is 10.097
+2020-09-10 03:09:13 [INFO]: Saving detection results to yolov3-tiny_066_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:09:14 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:09:14 [INFO]: Sample rate is 0.66
+2020-09-10 03:09:14 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:09:17 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:09:17 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:09:17 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:10:47 [INFO]: Average fps is 8.120
+2020-09-10 03:10:47 [INFO]: Saving detection results to detr_066_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:10:48 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:10:48 [INFO]: Sample rate is 0.66
+2020-09-10 03:10:48 [INFO]: Detection model is set to yolov3
+2020-09-10 03:10:49 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:10:51 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:10:51 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:10:51 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:13:32 [INFO]: Average fps is 5.225
+2020-09-10 03:13:32 [INFO]: Saving detection results to yolov3_066_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:13:34 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:13:34 [INFO]: Sample rate is 0.66
+2020-09-10 03:13:34 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:13:34 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:13:36 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:13:36 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:13:36 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:15:06 [INFO]: Average fps is 9.534
+2020-09-10 03:15:06 [INFO]: Saving detection results to yolov3-tiny_066_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:15:08 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:15:08 [INFO]: Sample rate is 0.66
+2020-09-10 03:15:08 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:15:11 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:15:11 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:15:11 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:16:41 [INFO]: Average fps is 8.135
+2020-09-10 03:16:41 [INFO]: Saving detection results to detr_066_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:16:43 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:16:43 [INFO]: Sample rate is 0.66
+2020-09-10 03:16:43 [INFO]: Detection model is set to yolov3
+2020-09-10 03:16:43 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:16:45 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:16:45 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:16:45 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:19:27 [INFO]: Average fps is 5.275
+2020-09-10 03:19:27 [INFO]: Saving detection results to yolov3_066_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:19:28 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:19:28 [INFO]: Sample rate is 0.66
+2020-09-10 03:19:28 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:19:28 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:19:30 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:19:30 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:19:30 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:20:57 [INFO]: Average fps is 9.918
+2020-09-10 03:20:57 [INFO]: Saving detection results to yolov3-tiny_066_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:20:58 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:20:58 [INFO]: Sample rate is 0.66
+2020-09-10 03:20:58 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:21:01 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:21:01 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:21:01 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:22:30 [INFO]: Average fps is 8.076
+2020-09-10 03:22:30 [INFO]: Saving detection results to detr_066_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:22:32 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:22:32 [INFO]: Sample rate is 0.66
+2020-09-10 03:22:32 [INFO]: Detection model is set to yolov3
+2020-09-10 03:22:32 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:22:35 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:22:35 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:22:35 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:25:10 [INFO]: Average fps is 5.367
+2020-09-10 03:25:10 [INFO]: Saving detection results to yolov3_066_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:25:11 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:25:11 [INFO]: Sample rate is 0.66
+2020-09-10 03:25:11 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:25:11 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:25:13 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:25:13 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:25:13 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:26:38 [INFO]: Average fps is 10.005
+2020-09-10 03:26:38 [INFO]: Saving detection results to yolov3-tiny_066_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:26:40 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:26:40 [INFO]: Sample rate is 0.33
+2020-09-10 03:26:40 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:26:43 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:26:43 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:26:43 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:27:26 [INFO]: Average fps is 117.879
+2020-09-10 03:27:26 [INFO]: Saving detection results to detr_033_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:27:27 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:27:27 [INFO]: Sample rate is 0.33
+2020-09-10 03:27:27 [INFO]: Detection model is set to yolov3
+2020-09-10 03:27:28 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:27:30 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:27:30 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:27:30 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:29:17 [INFO]: Average fps is 12.844
+2020-09-10 03:29:17 [INFO]: Saving detection results to yolov3_033_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:29:19 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:29:19 [INFO]: Sample rate is 0.33
+2020-09-10 03:29:19 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:29:19 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:29:21 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:29:21 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:29:21 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:30:15 [INFO]: Average fps is 30.827
+2020-09-10 03:30:15 [INFO]: Saving detection results to yolov3-tiny_033_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:30:17 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:30:17 [INFO]: Sample rate is 0.33
+2020-09-10 03:30:17 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:30:20 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:30:21 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:30:21 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:31:05 [INFO]: Average fps is 118.481
+2020-09-10 03:31:05 [INFO]: Saving detection results to detr_033_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:31:06 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:31:06 [INFO]: Sample rate is 0.33
+2020-09-10 03:31:06 [INFO]: Detection model is set to yolov3
+2020-09-10 03:31:07 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:31:09 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:31:09 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:31:09 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:32:57 [INFO]: Average fps is 12.757
+2020-09-10 03:32:57 [INFO]: Saving detection results to yolov3_033_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:32:59 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:32:59 [INFO]: Sample rate is 0.33
+2020-09-10 03:32:59 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:32:59 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:33:01 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:33:01 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:33:01 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:33:55 [INFO]: Average fps is 30.320
+2020-09-10 03:33:55 [INFO]: Saving detection results to yolov3-tiny_033_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:33:58 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:33:58 [INFO]: Sample rate is 0.33
+2020-09-10 03:33:58 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:34:01 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:34:01 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:34:01 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:34:44 [INFO]: Average fps is 118.899
+2020-09-10 03:34:44 [INFO]: Saving detection results to detr_033_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:34:45 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:34:45 [INFO]: Sample rate is 0.33
+2020-09-10 03:34:45 [INFO]: Detection model is set to yolov3
+2020-09-10 03:34:46 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:34:48 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:34:48 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:34:48 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:36:37 [INFO]: Average fps is 12.863
+2020-09-10 03:36:37 [INFO]: Saving detection results to yolov3_033_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:36:39 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:36:39 [INFO]: Sample rate is 0.33
+2020-09-10 03:36:39 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:36:39 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:36:41 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:36:41 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:36:41 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:37:36 [INFO]: Average fps is 30.457
+2020-09-10 03:37:36 [INFO]: Saving detection results to yolov3-tiny_033_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:37:38 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:37:38 [INFO]: Sample rate is 0.33
+2020-09-10 03:37:38 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:37:41 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:37:41 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:37:41 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:38:23 [INFO]: Average fps is 117.457
+2020-09-10 03:38:23 [INFO]: Saving detection results to detr_033_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:38:24 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:38:24 [INFO]: Sample rate is 0.33
+2020-09-10 03:38:24 [INFO]: Detection model is set to yolov3
+2020-09-10 03:38:25 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:38:27 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:38:27 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:38:27 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:40:15 [INFO]: Average fps is 12.976
+2020-09-10 03:40:15 [INFO]: Saving detection results to yolov3_033_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:40:16 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:40:16 [INFO]: Sample rate is 0.33
+2020-09-10 03:40:16 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:40:16 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:40:18 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:40:18 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:40:18 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:41:14 [INFO]: Average fps is 28.336
+2020-09-10 03:41:14 [INFO]: Saving detection results to yolov3-tiny_033_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:41:15 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:41:15 [INFO]: Sample rate is 0.33
+2020-09-10 03:41:15 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:41:18 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:41:18 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:41:18 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:42:00 [INFO]: Average fps is 120.991
+2020-09-10 03:42:00 [INFO]: Saving detection results to detr_033_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:42:02 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:42:02 [INFO]: Sample rate is 0.33
+2020-09-10 03:42:02 [INFO]: Detection model is set to yolov3
+2020-09-10 03:42:02 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:42:05 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:42:05 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:42:05 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:43:50 [INFO]: Average fps is 13.613
+2020-09-10 03:43:50 [INFO]: Saving detection results to yolov3_033_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:43:51 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:43:52 [INFO]: Sample rate is 0.33
+2020-09-10 03:43:52 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:43:52 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:43:54 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:43:54 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:43:54 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:44:47 [INFO]: Average fps is 31.323
+2020-09-10 03:44:47 [INFO]: Saving detection results to yolov3-tiny_033_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:44:49 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:44:49 [INFO]: Sample rate is 0.15
+2020-09-10 03:44:49 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:44:52 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:44:52 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:44:52 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:45:22 [INFO]: Average fps is 146.185
+2020-09-10 03:45:22 [INFO]: Saving detection results to detr_015_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:45:25 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:45:26 [INFO]: Sample rate is 0.15
+2020-09-10 03:45:26 [INFO]: Detection model is set to yolov3
+2020-09-10 03:45:26 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:45:28 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:45:28 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:45:28 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:47:04 [INFO]: Average fps is 14.492
+2020-09-10 03:47:04 [INFO]: Saving detection results to yolov3_015_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:47:05 [INFO]: Video rate is data/1080p.avi
+2020-09-10 03:47:05 [INFO]: Sample rate is 0.15
+2020-09-10 03:47:05 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:47:05 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:47:07 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:47:07 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:47:07 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:47:54 [INFO]: Average fps is 33.318
+2020-09-10 03:47:54 [INFO]: Saving detection results to yolov3-tiny_015_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:47:56 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:47:56 [INFO]: Sample rate is 0.15
+2020-09-10 03:47:56 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:47:59 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:47:59 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:47:59 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:48:30 [INFO]: Average fps is 148.375
+2020-09-10 03:48:30 [INFO]: Saving detection results to detr_015_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:48:33 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:48:33 [INFO]: Sample rate is 0.15
+2020-09-10 03:48:33 [INFO]: Detection model is set to yolov3
+2020-09-10 03:48:34 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:48:36 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:48:36 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:48:36 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:50:13 [INFO]: Average fps is 14.376
+2020-09-10 03:50:13 [INFO]: Saving detection results to yolov3_015_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:50:14 [INFO]: Video rate is data/720p.avi
+2020-09-10 03:50:14 [INFO]: Sample rate is 0.15
+2020-09-10 03:50:14 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:50:15 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:50:17 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:50:17 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:50:17 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:51:04 [INFO]: Average fps is 33.236
+2020-09-10 03:51:04 [INFO]: Saving detection results to yolov3-tiny_015_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:51:06 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:51:06 [INFO]: Sample rate is 0.15
+2020-09-10 03:51:06 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:51:09 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:51:09 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:51:09 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:51:40 [INFO]: Average fps is 149.538
+2020-09-10 03:51:40 [INFO]: Saving detection results to detr_015_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:51:43 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:51:43 [INFO]: Sample rate is 0.15
+2020-09-10 03:51:43 [INFO]: Detection model is set to yolov3
+2020-09-10 03:51:44 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:51:46 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:51:46 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:51:46 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:53:20 [INFO]: Average fps is 14.342
+2020-09-10 03:53:20 [INFO]: Saving detection results to yolov3_015_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:53:22 [INFO]: Video rate is data/480p.avi
+2020-09-10 03:53:22 [INFO]: Sample rate is 0.15
+2020-09-10 03:53:22 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:53:22 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:53:24 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:53:24 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:53:24 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:54:12 [INFO]: Average fps is 33.604
+2020-09-10 03:54:12 [INFO]: Saving detection results to yolov3-tiny_015_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:54:14 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:54:14 [INFO]: Sample rate is 0.15
+2020-09-10 03:54:14 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:54:17 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:54:17 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:54:17 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:54:49 [INFO]: Average fps is 143.339
+2020-09-10 03:54:49 [INFO]: Saving detection results to detr_015_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:54:52 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:54:52 [INFO]: Sample rate is 0.15
+2020-09-10 03:54:52 [INFO]: Detection model is set to yolov3
+2020-09-10 03:54:53 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:54:55 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:54:55 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:54:55 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:56:30 [INFO]: Average fps is 14.654
+2020-09-10 03:56:30 [INFO]: Saving detection results to yolov3_015_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:56:31 [INFO]: Video rate is data/360p.avi
+2020-09-10 03:56:31 [INFO]: Sample rate is 0.15
+2020-09-10 03:56:31 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:56:31 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:56:33 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:56:33 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:56:33 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:57:19 [INFO]: Average fps is 34.198
+2020-09-10 03:57:19 [INFO]: Saving detection results to yolov3-tiny_015_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:57:21 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:57:21 [INFO]: Sample rate is 0.15
+2020-09-10 03:57:21 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 03:57:24 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:57:24 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:57:24 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:57:55 [INFO]: Average fps is 150.399
+2020-09-10 03:57:55 [INFO]: Saving detection results to detr_015_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:57:58 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:57:58 [INFO]: Sample rate is 0.15
+2020-09-10 03:57:58 [INFO]: Detection model is set to yolov3
+2020-09-10 03:57:58 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 03:58:01 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:58:01 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:58:01 [INFO]: Saving result to ./output/results.txt
+2020-09-10 03:59:30 [INFO]: Average fps is 15.948
+2020-09-10 03:59:30 [INFO]: Saving detection results to yolov3_015_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 03:59:32 [INFO]: Video rate is data/240p.avi
+2020-09-10 03:59:32 [INFO]: Sample rate is 0.15
+2020-09-10 03:59:32 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 03:59:32 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 03:59:34 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 03:59:34 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 03:59:34 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:00:21 [INFO]: Average fps is 35.078
+2020-09-10 04:00:21 [INFO]: Saving detection results to yolov3-tiny_015_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:00:23 [INFO]: Video rate is data/1080p.avi
+2020-09-10 04:00:23 [INFO]: Sample rate is 0.066
+2020-09-10 04:00:23 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 04:00:26 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:00:26 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:00:26 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:00:49 [INFO]: Average fps is 158.252
+2020-09-10 04:00:49 [INFO]: Saving detection results to detr_0066_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:00:51 [INFO]: Video rate is data/1080p.avi
+2020-09-10 04:00:51 [INFO]: Sample rate is 0.066
+2020-09-10 04:00:51 [INFO]: Detection model is set to yolov3
+2020-09-10 04:00:52 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 04:00:54 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:00:54 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:00:54 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:02:21 [INFO]: Average fps is 15.423
+2020-09-10 04:02:21 [INFO]: Saving detection results to yolov3_0066_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:02:23 [INFO]: Video rate is data/1080p.avi
+2020-09-10 04:02:23 [INFO]: Sample rate is 0.066
+2020-09-10 04:02:23 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 04:02:23 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 04:02:25 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:02:25 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:02:25 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:03:06 [INFO]: Average fps is 39.991
+2020-09-10 04:03:06 [INFO]: Saving detection results to yolov3-tiny_0066_1080.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:03:08 [INFO]: Video rate is data/720p.avi
+2020-09-10 04:03:08 [INFO]: Sample rate is 0.066
+2020-09-10 04:03:08 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 04:03:11 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:03:11 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:03:11 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:03:36 [INFO]: Average fps is 163.685
+2020-09-10 04:03:36 [INFO]: Saving detection results to detr_0066_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:03:37 [INFO]: Video rate is data/720p.avi
+2020-09-10 04:03:37 [INFO]: Sample rate is 0.066
+2020-09-10 04:03:37 [INFO]: Detection model is set to yolov3
+2020-09-10 04:03:38 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 04:03:40 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:03:40 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:03:40 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:05:07 [INFO]: Average fps is 15.586
+2020-09-10 04:05:07 [INFO]: Saving detection results to yolov3_0066_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:05:09 [INFO]: Video rate is data/720p.avi
+2020-09-10 04:05:09 [INFO]: Sample rate is 0.066
+2020-09-10 04:05:09 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 04:05:09 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 04:05:11 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:05:11 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:05:11 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:05:54 [INFO]: Average fps is 34.825
+2020-09-10 04:05:54 [INFO]: Saving detection results to yolov3-tiny_0066_720.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:05:55 [INFO]: Video rate is data/480p.avi
+2020-09-10 04:05:55 [INFO]: Sample rate is 0.066
+2020-09-10 04:05:55 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 04:05:58 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:05:58 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:05:58 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:06:21 [INFO]: Average fps is 164.683
+2020-09-10 04:06:21 [INFO]: Saving detection results to detr_0066_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:06:23 [INFO]: Video rate is data/480p.avi
+2020-09-10 04:06:23 [INFO]: Sample rate is 0.066
+2020-09-10 04:06:23 [INFO]: Detection model is set to yolov3
+2020-09-10 04:06:23 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 04:06:25 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:06:25 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:06:25 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:07:55 [INFO]: Average fps is 15.107
+2020-09-10 04:07:55 [INFO]: Saving detection results to yolov3_0066_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:07:57 [INFO]: Video rate is data/480p.avi
+2020-09-10 04:07:57 [INFO]: Sample rate is 0.066
+2020-09-10 04:07:57 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 04:07:57 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 04:07:59 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:07:59 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:07:59 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:08:39 [INFO]: Average fps is 38.368
+2020-09-10 04:08:39 [INFO]: Saving detection results to yolov3-tiny_0066_480.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:08:40 [INFO]: Video rate is data/360p.avi
+2020-09-10 04:08:40 [INFO]: Sample rate is 0.066
+2020-09-10 04:08:40 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 04:08:43 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:08:43 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:08:43 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:09:08 [INFO]: Average fps is 165.619
+2020-09-10 04:09:08 [INFO]: Saving detection results to detr_0066_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:09:09 [INFO]: Video rate is data/360p.avi
+2020-09-10 04:09:09 [INFO]: Sample rate is 0.066
+2020-09-10 04:09:09 [INFO]: Detection model is set to yolov3
+2020-09-10 04:09:10 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 04:09:12 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:09:12 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:09:12 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:10:41 [INFO]: Average fps is 15.562
+2020-09-10 04:10:41 [INFO]: Saving detection results to yolov3_0066_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:10:42 [INFO]: Video rate is data/360p.avi
+2020-09-10 04:10:42 [INFO]: Sample rate is 0.066
+2020-09-10 04:10:42 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 04:10:42 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 04:10:44 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:10:44 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:10:44 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:11:24 [INFO]: Average fps is 38.880
+2020-09-10 04:11:24 [INFO]: Saving detection results to yolov3-tiny_0066_360.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:11:25 [INFO]: Video rate is data/240p.avi
+2020-09-10 04:11:25 [INFO]: Sample rate is 0.066
+2020-09-10 04:11:25 [INFO]: Detection model is set to detr
+Using cache found in /home/ubuntu/.cache/torch/hub/facebookresearch_detr_master
+2020-09-10 04:11:28 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:11:28 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:11:28 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:11:51 [INFO]: Average fps is 164.356
+2020-09-10 04:11:51 [INFO]: Saving detection results to detr_0066_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:11:53 [INFO]: Video rate is data/240p.avi
+2020-09-10 04:11:53 [INFO]: Sample rate is 0.066
+2020-09-10 04:11:53 [INFO]: Detection model is set to yolov3
+2020-09-10 04:11:54 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3.weights... Done!
+2020-09-10 04:11:56 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:11:56 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:11:56 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:13:21 [INFO]: Average fps is 16.346
+2020-09-10 04:13:21 [INFO]: Saving detection results to yolov3_0066_240.pkl
+/home/ubuntu/deep_sort_pytorch/utils/parser.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.update(yaml.load(fo.read()))
+2020-09-10 04:13:22 [INFO]: Video rate is data/240p.avi
+2020-09-10 04:13:22 [INFO]: Sample rate is 0.066
+2020-09-10 04:13:22 [INFO]: Detection model is set to yolov3-tiny
+2020-09-10 04:13:22 [INFO]: Loading weights from ./detector/YOLOv3/weight/yolov3-tiny.weights... Done!
+2020-09-10 04:13:24 [INFO]: Loading weights from ./deep_sort/deep/checkpoint/ckpt.t7... Done!
+2020-09-10 04:13:24 [INFO]: Saving video  to ./output/results.avi
+2020-09-10 04:13:24 [INFO]: Saving result to ./output/results.txt
+2020-09-10 04:14:04 [INFO]: Average fps is 38.328
+2020-09-10 04:14:04 [INFO]: Saving detection results to yolov3-tiny_0066_240.pkl

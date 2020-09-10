@@ -45,7 +45,7 @@ class DETR(object):
             outputs = self.net(img)
             probas = outputs['pred_logits'].softmax(-1)[0, :, :-1]
             keep = probas.max(-1).values > 0.7
-            boxes = outputs['pred_boxes'][0, keep]
+            boxes = outputs['pred_boxes'][0, keep].cpu()
             
             # boxes = get_all_boxes(out_boxes, self.conf_thresh, self.num_classes,
             #                      use_cuda=self.use_cuda)  # batch size is 1
@@ -66,8 +66,8 @@ class DETR(object):
                 bbox = xyxy_to_xywh(bbox)
 
             bbox *= torch.FloatTensor([[width, height, width, height]])
-            cls_conf = probas[keep]
-            cls_ids = torch.argmax(probas, dim=1, keepdim=True)
+            cls_conf = torch.max(probas[keep].cpu(), dim=1).values
+            cls_ids = torch.argmax(probas[keep], dim=1).cpu()
 
         return bbox.numpy(), cls_conf.numpy(), cls_ids.numpy()
 

@@ -113,8 +113,8 @@ class TensorflowObjectDetector:
         confs = []
         labels = []
 
-        x_scale = frameshape[0]
-        y_scale = frameshape[1]
+        x_scale = frameshape[1]
+        y_scale = frameshape[0]
         
 
         for detection in detections[0, 0]:

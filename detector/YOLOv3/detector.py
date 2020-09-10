@@ -54,8 +54,8 @@ class YOLOv3(object):
             cls_conf = torch.FloatTensor([])
             cls_ids = torch.LongTensor([])
         else:
-            # height, width = ori_img.shape[:2]
-            height, width = (1920, 1080)
+            height, width = ori_img.shape[:2]
+            #height, width = (1920, 1080)
             bbox = boxes[:, :4]
             if self.is_xywh:
                 # bbox x y w h
