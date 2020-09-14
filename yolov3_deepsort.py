@@ -5,6 +5,7 @@ import argparse
 import torch
 import warnings
 import pickle
+import re
 import numpy as np
 
 from detector import build_detector
@@ -21,6 +22,8 @@ class VideoTracker(object):
         self.args = args
         self.video_path = video_path
         self.logger = get_logger("root")
+        self.logger.info(f"Video rate is {self.video_path}")
+
 
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
@@ -70,7 +73,10 @@ class VideoTracker(object):
 
             # create video writer
             fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-            self.writer = cv2.VideoWriter(self.save_video_path, fourcc, 20, (self.im_width, self.im_height))
+            if args.force_resolution:
+                self.writer = cv2.VideoWriter(self.save_video_path, fourcc, 20, (1920, 1080))
+            else:
+                self.writer = cv2.VideoWriter(self.save_video_path, fourcc, 20, (self.im_width, self.im_height))
 
             # logging
             self.logger.info(f"Saving video  to {self.save_video_path}")
@@ -103,9 +109,13 @@ class VideoTracker(object):
             start = time.time()
             _, ori_im = self.vdo.retrieve()
             im = cv2.cvtColor(ori_im, cv2.COLOR_BGR2RGB)
+            height, width = im.shape[:2]
 
             # do detection
             bbox_xywh, cls_conf, cls_ids = self.get_next_detection(im, idx_frame)
+            # print(bbox_xywh, cls_conf, cls_ids)
+            # # if idx_frame == 3:
+            # #     break
 
             if args.save_detection:
                 detection_dict[idx_frame] = [bbox_xywh, cls_conf, cls_ids]
@@ -126,8 +136,13 @@ class VideoTracker(object):
             if len(outputs) > 0:
                 bbox_tlwh = []
                 bbox_xyxy = outputs[:, :4]
+                # x_scale = int(np.round(1920/width))
+                # y_scale = int(np.round(1080/height))
+                # x_scale = 1920/width
+                # y_scale = 1080/height
+                # bbox_xyxy *= np.array([[x_scale, y_scale, x_scale, y_scale]], dtype=np.int32)
                 identities = outputs[:, -1]
-                ori_im = draw_boxes(ori_im, bbox_xyxy, identities, args.force_resolution)
+                ori_im = draw_boxes(ori_im, bbox_xyxy, identities, force_resolution=args.force_resolution)
 
                 for bb_xyxy in bbox_xyxy:
                     bbox_tlwh.append(self.deepsort._xyxy_to_tlwh(bb_xyxy))
@@ -149,14 +164,14 @@ class VideoTracker(object):
             # logging
             fps.append(1 / (end - start))
             self.logger.info("time: {:.03f}s, fps: {:.03f}, detection numbers: {}, tracking numbers: {}" \
-                             .format(end - start, 1 / (end - start), bbox_xywh.shape[0], len(outputs)))
+                          .format(end - start, 1 / (end - start), bbox_xywh.shape[0], len(outputs)))
         self.logger.info("Average fps is {:.03f}".format(sum(fps) / len(fps)))
         if args.save_detection:
-            with open(os.path.join("output", args.detection_model, ".txt"), "rb") as f:
+            res = re.findall(r'\d+', self.video_path)[0]
+            save_path = str(args.detection_model) + "_" + str(args.sample_rate).replace(".", "") + "_" + res + ".pkl"
+            self.logger.info(f"Saving detection results to {save_path}")
+            with open(os.path.join("output", save_path), "wb") as f:
                 pickle.dump(detection_dict, f)
-
-
-
 
 def parse_args():
     parser = argparse.ArgumentParser()
